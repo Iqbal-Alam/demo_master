@@ -1,0 +1,28 @@
+<app-topbar></app-topbar>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4 col-sm-offset-4">
+      <form>
+        <div class="form-group">
+          <label >Item Name</label>
+          <input type="text" class="form-control" name="itemName" [(ngModel)]="item.name" placeholder="Enter Item" />
+        </div>
+        <div class="form-group">
+          <label >Amount</label>
+          <input type="text" class="form-control" name="itemAmount" [(ngModel)]="item.amount" placeholder="Amount" />
+        </div>
+        <button type="button" class="btn btn-success" (click)="addItem()">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-2 itemCol" *ngFor="let i of items">
+      <!-- <img src="{{i.name == 'chicken' ? 'assets/img/chicken.svg' : 'no'}}" alt=""> -->
+      <img src="assets/img/chicken.svg" alt="">
+      <h1>{{i.name}}</h1>
+      <p>{{i.amount}}</p>
+      <p class="label label-primary">{{totalAmount}}</p>
+    </div>
+  </div>
+</div>

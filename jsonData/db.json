@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "name": "Ata",
+      "amount": "32",
+      "id": 1
+    },
+    {
+      "name": "egg",
+      "amount": "20",
+      "id": 2
+    },
+    {
+      "name": "chicken",
+      "amount": "21",
+      "id": 3
+    },
+    {
+      "name": "water filter",
+      "amount": "500",
+      "id": 4
+    }
+  ]
+}
