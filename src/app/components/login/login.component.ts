@@ -10,9 +10,9 @@ import * as _ from 'lodash';
 })
 export class LoginComponent implements OnInit {
   
-  item:{};
-  items : [];
-  totalAmount:number;
+  public item;
+  public items;
+  public totalAmount:number;
 
 
   constructor(private _userService: MainService) { 
